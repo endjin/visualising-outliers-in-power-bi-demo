@@ -1,0 +1,257 @@
+cultureInfo en-GB
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dax_measures.total_items": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "Total Items"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Total Items": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dax_measures.median_processing_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "Median Processing Time"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dax_measures.p95_processing_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "P95 Processing Time"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dax_measures.outlier_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "Outlier Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Outlier Count": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "workflowprocessingtimes.workflowstate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WorkflowProcessingTimes",
+			          "ConceptualProperty": "WorkflowState"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Workflow State": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "workflowprocessingtimes.processeddate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "WorkflowProcessingTimes",
+			          "ConceptualProperty": "ProcessedDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Processed Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dax_measures.median_item_total_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "Median Item Total Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Median Item Total Time (minutes)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dax_measures.p95_item_total_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "P95 Item Total Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "P95 Item Total Time (minutes)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dax_measures.p90_item_total_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "P90 Item Total Time"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dax_measures.p99_item_total_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "P99 Item Total Time"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "dax_measures.outlier_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DAX Measures",
+			          "ConceptualProperty": "Outlier %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Outlier %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "itemsummary.startdate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ItemSummary",
+			          "ConceptualProperty": "StartDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Start Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "itemsummary.itemid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ItemSummary",
+			          "ConceptualProperty": "ItemId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Item": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "itemsummary.itemtype": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ItemSummary",
+			          "ConceptualProperty": "ItemType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Item Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

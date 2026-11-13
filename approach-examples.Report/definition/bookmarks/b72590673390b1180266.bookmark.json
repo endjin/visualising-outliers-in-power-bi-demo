@@ -1,0 +1,233 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "All Data",
+  "name": "b72590673390b1180266",
+  "options": {
+    "targetVisualNames": []
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "9d456ffbd6575cb06345",
+    "sections": {
+      "9d456ffbd6575cb06345": {
+        "visualContainers": {
+          "732ade7d2a2880705b38": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "498b7d39015e1106438d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "WorkflowProcessingTimes"
+                        }
+                      },
+                      "Property": "ItemId"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "9fbd9e0790700ad77ae5",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Processing Time (Normal Items Only)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Processing Time (Normal Items Only)"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "WorkflowProcessingTimes"
+                        }
+                      },
+                      "Property": "ItemId"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "5ac68ee368795ac609c0": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "4e97b8de552842ea877a": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "77d2bc089760c9a686de",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "WorkflowProcessingTimes"
+                        }
+                      },
+                      "Property": "ItemId"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "ec92f0070ca4c99edea2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Processing Time (Outlier Items Only)"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredColumnChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Processing Time (Outlier Items Only)"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Category": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "WorkflowProcessingTimes"
+                        }
+                      },
+                      "Property": "ItemId"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cfd7fe0a2453c1196935": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "e3e7aff4a4690700c368",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Normal Count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "71b34b816c3d562d0296",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Outlier Count"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6724f000887c50ea1d33",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "Median Processing Time"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c2159f3b75b0b070e703",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DAX Measures"
+                        }
+                      },
+                      "Property": "P95 Processing Time"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "tableEx",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {}
+  }
+}

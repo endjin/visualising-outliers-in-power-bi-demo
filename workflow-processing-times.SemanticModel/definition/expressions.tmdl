@@ -1,0 +1,4 @@
+/// Folder containing workflow_processing_times.csv. Set this to wherever you cloned the repository.
+expression DataFolder = "C:\git\visualising-outliers-in-power-bi-demo" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 850c857e-282d-4a13-8994-b507272084a4
+

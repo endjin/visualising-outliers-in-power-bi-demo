@@ -1,0 +1,5 @@
+# Power BI Desktop per-machine state, regenerated when the project is opened
+**/.pbi/localSettings.json
+
+# Cached data; Refresh rebuilds it from the CSV
+**/.pbi/cache.abf

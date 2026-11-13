@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "7141a406ce2e9b00b206",
+  "position": {
+    "x": 19.844961240310077,
+    "y": 93.881932021466909,
+    "z": 1000,
+    "height": 189.29039952295767,
+    "width": 1240.31007751938,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "This sample Power BI report accompanies the blog post \"Visualising Data with Extreme Outliers in Power BI: A Practical Guide\", available at endjin.com/blog."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "It demonstrates a number of approaches for visualising data containing extreme outliers. The sample data set, shown in the table below, contains information on 120 items that move through a series of workflow states from \"Received\" to \"Complete\". Each row details the time the item spent in a single workflow state."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": " Items are considered \"outliers\" if their total processing time in all states is more than 120 minutes."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "The report showcases a number of visualisation techniques, with the calculated columns and measures necessary to generate them."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "If you have questions or feedback, please leave a comment on the blog post."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

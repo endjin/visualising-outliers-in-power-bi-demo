@@ -1,0 +1,181 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "9c5f4f3fec7b44a7b638",
+  "displayName": "Item Details",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "432dd2dbedab4620985a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "WorkflowProcessingTimes"
+              }
+            },
+            "Property": "ItemId"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "w",
+              "Entity": "WorkflowProcessingTimes",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "w"
+                          }
+                        },
+                        "Property": "ItemId"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'WI-015'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "e01a97230e522570688b",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "68b9bc848a2dc42ea44e",
+        "boundFilter": "432dd2dbedab4620985a",
+        "fieldExpr": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "WorkflowProcessingTimes"
+              }
+            },
+            "Property": "ItemId"
+          }
+        }
+      }
+    ],
+    "acceptsFilterContext": "None"
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'endjin-grid-1280-12col-20px-Gutter @2x.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "endjin-grid-1280-12col-20px-Gu9884941925768689.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "100D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "5c19a1008ee23b70bcc2",
+      "target": "ddb8125f8ad03b946d7e",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5c19a1008ee23b70bcc2",
+      "target": "6c361d06d0746c009a69",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5c19a1008ee23b70bcc2",
+      "target": "04253efe8273062ba700",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5c19a1008ee23b70bcc2",
+      "target": "90fe6551991300968226",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5c19a1008ee23b70bcc2",
+      "target": "c641fe28bed0dce27c20",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c641fe28bed0dce27c20",
+      "target": "5c19a1008ee23b70bcc2",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c641fe28bed0dce27c20",
+      "target": "90fe6551991300968226",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c641fe28bed0dce27c20",
+      "target": "04253efe8273062ba700",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c641fe28bed0dce27c20",
+      "target": "6c361d06d0746c009a69",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c641fe28bed0dce27c20",
+      "target": "ddb8125f8ad03b946d7e",
+      "type": "NoFilter"
+    }
+  ]
+}

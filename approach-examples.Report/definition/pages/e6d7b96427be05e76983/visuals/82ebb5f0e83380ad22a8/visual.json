@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "82ebb5f0e83380ad22a8",
+  "position": {
+    "x": 19.844961240310077,
+    "y": 18.318425760286228,
+    "z": 0,
+    "height": 64.1144901610018,
+    "width": 1240.31007751938,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "VISUALISING DATA WITH EXTREME OUTLIERS IN POWER BI: A PRACTICAL GUIDE",
+                    "textStyle": {
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "24pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,128 @@
+table WorkflowProcessingTimes
+	lineageTag: 22f22c16-8d86-4294-ad10-3acadf3a7639
+
+	column ItemId
+		dataType: string
+		lineageTag: a4d44814-6659-4d38-a029-0720c25585c4
+		summarizeBy: none
+		sourceColumn: ItemId
+
+		annotation SummarizationSetBy = Automatic
+
+	column WorkflowState
+		dataType: string
+		lineageTag: c1b58374-0c5a-42c1-b7c6-3edc98d639bf
+		summarizeBy: none
+		sourceColumn: WorkflowState
+		sortByColumn: StateSortOrder
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProcessingTimeMinutes
+		dataType: int64
+		formatString: #,0
+		lineageTag: 0b544764-4d00-4802-be2c-2521727e489f
+		summarizeBy: sum
+		sourceColumn: ProcessingTimeMinutes
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProcessedDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f97533d5-7963-4720-8191-1d365de9aaea
+		summarizeBy: none
+		sourceColumn: ProcessedDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Category
+		dataType: string
+		lineageTag: 917faa73-0abb-4ee4-9a71-8ce20bd3bd9d
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Priority
+		dataType: string
+		lineageTag: f4249c1a-6bca-43dc-872c-f1f88f09d057
+		summarizeBy: none
+		sourceColumn: Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column StateSortOrder
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c8b1721d-d77f-4bc8-adc2-2f85d349a785
+		summarizeBy: none
+		sourceColumn: StateSortOrder
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProcessingTimeBucket =
+			
+			SWITCH(
+			    TRUE(),
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 15, "00-15 mins",
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 30, "15-30 mins",
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 60, "30-60 mins",
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 120, "1-2 hours",
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 240, "2-4 hours",
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 480, "4-8 hours",
+			    "8+ hours"
+			)
+		displayFolder: Calculated Columns
+		lineageTag: 7591e346-2dec-41eb-ab8c-d8fe066635d8
+		summarizeBy: none
+		sortByColumn: BucketSortOrder
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column BucketSortOrder =
+			
+			SWITCH(
+			    TRUE(),
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 15, 1,
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 30, 2,
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 60, 3,
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 120, 4,
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 240, 5,
+			    'WorkflowProcessingTimes'[ProcessingTimeMinutes] <= 480, 6,
+			    7
+			)
+		formatString: 0
+		displayFolder: Calculated Columns
+		lineageTag: 0aa0383f-7edd-4126-ac26-7c4e3e8bd9df
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition WorkflowProcessingTimes = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "\workflow_processing_times.csv"),[Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ItemId", type text}, {"WorkflowState", type text}, {"ProcessingTimeMinutes", Int64.Type}, {"ProcessedDate", type date}, {"Category", type text}, {"Priority", type text}}),
+				    #"Added StateSortOrder" = Table.AddColumn(#"Changed Type", "StateSortOrder", each if [WorkflowState] = "Received" then 1
+				        else if [WorkflowState] = "Validation" then 2
+				        else if [WorkflowState] = "Processing" then 3
+				        else if [WorkflowState] = "Review" then 4
+				        else if [WorkflowState] = "Complete" then 5
+				        else 6, Int64.Type)
+				in
+				    #"Added StateSortOrder"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

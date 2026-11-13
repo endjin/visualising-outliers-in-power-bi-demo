@@ -1,0 +1,4 @@
+relationship ItemSummary_to_WorkflowProcessingTimes
+	fromColumn: WorkflowProcessingTimes.ItemId
+	toColumn: ItemSummary.ItemId
+

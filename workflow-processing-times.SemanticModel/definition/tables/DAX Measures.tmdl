@@ -1,0 +1,224 @@
+table 'DAX Measures'
+	lineageTag: 314e22f0-9dfb-440a-8971-4ede56716818
+
+	/// Average minutes per workflow step (one row per item per state).
+	measure 'Average Processing Time' = AVERAGE('WorkflowProcessingTimes'[ProcessingTimeMinutes])
+		formatString: #,0.0
+		displayFolder: Per-Step Statistics
+		lineageTag: d2e8e304-5e48-4511-963a-366c7b6d8ae1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Median minutes per workflow step. Use for state-by-state comparisons; use Median Item Total Time for whole-item figures.
+	measure 'Median Processing Time' = MEDIAN('WorkflowProcessingTimes'[ProcessingTimeMinutes])
+		formatString: #,0.0
+		displayFolder: Per-Step Statistics
+		lineageTag: 44183f6f-0fdf-4dca-ba53-463a529a5fe5
+
+	measure 'Total Items' = DISTINCTCOUNT('WorkflowProcessingTimes'[ItemId])
+		formatString: #,0
+		displayFolder: Per-Item Statistics
+		lineageTag: 3e4955f7-60ef-40ba-a7ee-b42718e01265
+
+	/// Each item's total time, capped at the Outlier Threshold. Totals sum the capped values rather than capping the total.
+	measure 'Processing Time Capped' =
+			VAR Cap = [Outlier Threshold]
+			RETURN
+			    SUMX(
+			        VALUES('WorkflowProcessingTimes'[ItemId]),
+			        MIN(Cap, [Total Processing Time])
+			    )
+		formatString: #,0
+		displayFolder: Capped Axis Visualisation
+		lineageTag: e8cf48be-80f1-41a0-8603-d5018c983f16
+
+	/// Items whose total time is at or under the Outlier Threshold.
+	measure 'Normal Count' =
+			VAR Threshold = [Outlier Threshold]
+			RETURN
+			    COALESCE(
+			        COUNTROWS(
+			            FILTER(
+			                VALUES('WorkflowProcessingTimes'[ItemId]),
+			                [Total Processing Time] <= Threshold
+			            )
+			        ),
+			        0
+			    )
+		formatString: #,0
+		displayFolder: Outlier Detection
+		lineageTag: e6ef1349-940f-471a-8c3c-ac57ba03caba
+
+	/// Items whose total time exceeds the Outlier Threshold.
+	measure 'Outlier Count' =
+			VAR Threshold = [Outlier Threshold]
+			RETURN
+			    COALESCE(
+			        COUNTROWS(
+			            FILTER(
+			                VALUES('WorkflowProcessingTimes'[ItemId]),
+			                [Total Processing Time] > Threshold
+			            )
+			        ),
+			        0
+			    )
+		formatString: #,0
+		displayFolder: Outlier Detection
+		lineageTag: f6c2d439-da68-45aa-a903-78b2b20698c5
+
+	/// Label for the current item. Only meaningful in a single-item context.
+	measure 'Is Outlier' = IF([Total Processing Time] > [Outlier Threshold], "Outlier", "Normal")
+		displayFolder: Outlier Detection
+		lineageTag: a3d262bb-d6a4-4544-ad7e-2db89ae77568
+
+	/// Minutes. An item whose total time across all states exceeds this is an outlier.
+	measure 'Outlier Threshold' = 120
+		formatString: 0
+		displayFolder: Outlier Detection
+		lineageTag: 33bc9799-8e92-41d0-9d6a-faac2312d646
+
+	measure 'P99 Processing Time' = PERCENTILE.INC('WorkflowProcessingTimes'[ProcessingTimeMinutes], 0.99)
+		formatString: #,0.0
+		displayFolder: Per-Step Statistics
+		lineageTag: 7490b3ac-7758-4be9-a093-03b0b68c7d90
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'P95 Processing Time' = PERCENTILE.INC('WorkflowProcessingTimes'[ProcessingTimeMinutes], 0.95)
+		formatString: #,0.0
+		displayFolder: Per-Step Statistics
+		lineageTag: 3eab333c-a18e-4d39-b48c-78d5150f40a8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'P90 Processing Time' = PERCENTILE.INC('WorkflowProcessingTimes'[ProcessingTimeMinutes], 0.90)
+		formatString: #,0.0
+		displayFolder: Per-Step Statistics
+		lineageTag: b01802b5-0c7e-47fb-9338-1c7befab223a
+
+	measure 'Processing Time Display' =
+			VAR Minutes = [Total Processing Time]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        Minutes < 60, FORMAT(Minutes, "0") & " mins",
+			        Minutes < 1440, FORMAT(Minutes / 60, "0.0") & " hours",
+			        FORMAT(Minutes / 1440, "0.0") & " days"
+			    )
+		displayFolder: Formatting
+		lineageTag: e5a45713-3c83-45f0-9a39-cd14b694da62
+
+	/// Total minutes in the current filter context. Per item, this is the item's total across all states.
+	measure 'Total Processing Time' = SUM('WorkflowProcessingTimes'[ProcessingTimeMinutes])
+		formatString: #,0
+		displayFolder: Per-Item Statistics
+		lineageTag: acb3c722-674a-422c-bc9e-3b1bac1fd9ba
+
+	/// Item total time for items at or under the threshold; blank otherwise, so outliers drop out of the visual.
+	measure 'Processing Time (Normal Items Only)' =
+			VAR Threshold = [Outlier Threshold]
+			RETURN
+			    SUMX(
+			        VALUES('WorkflowProcessingTimes'[ItemId]),
+			        VAR ItemTotal = [Total Processing Time]
+			        RETURN IF(ItemTotal <= Threshold, ItemTotal)
+			    )
+		formatString: #,0
+		displayFolder: Separate Normal/Outlier Visualisation
+		lineageTag: a8c7cdbe-0f23-4f96-802a-cb8123ff4c88
+
+	/// Item total time for items over the threshold; blank otherwise, so normal items drop out of the visual.
+	measure 'Processing Time (Outlier Items Only)' =
+			VAR Threshold = [Outlier Threshold]
+			RETURN
+			    SUMX(
+			        VALUES('WorkflowProcessingTimes'[ItemId]),
+			        VAR ItemTotal = [Total Processing Time]
+			        RETURN IF(ItemTotal > Threshold, ItemTotal)
+			    )
+		formatString: #,0
+		displayFolder: Separate Normal/Outlier Visualisation
+		lineageTag: b10ca958-a97b-405d-914c-1b511c29c3b6
+
+	/// Median of each item's total time across all workflow states.
+	measure 'Median Item Total Time' =
+			MEDIANX(
+			    VALUES('WorkflowProcessingTimes'[ItemId]),
+			    [Total Processing Time]
+			)
+		formatString: #,0.0
+		displayFolder: Per-Item Statistics
+		lineageTag: 19815775-f625-41f7-95ff-6cd4b65b202e
+
+	/// Mean of each item's total time across all workflow states. Skewed heavily by outliers; shown for contrast with the median.
+	measure 'Average Item Total Time' =
+			AVERAGEX(
+			    VALUES('WorkflowProcessingTimes'[ItemId]),
+			    [Total Processing Time]
+			)
+		formatString: #,0.0
+		displayFolder: Per-Item Statistics
+		lineageTag: 94917de5-94ff-4994-9b7a-3fdb826de8a2
+
+	measure 'P90 Item Total Time' =
+			PERCENTILEX.INC(
+			    VALUES('WorkflowProcessingTimes'[ItemId]),
+			    [Total Processing Time],
+			    0.90
+			)
+		formatString: #,0.0
+		displayFolder: Per-Item Statistics
+		lineageTag: 15a9093b-0c84-4cc9-b6ae-e94bdd34b155
+
+	measure 'P95 Item Total Time' =
+			PERCENTILEX.INC(
+			    VALUES('WorkflowProcessingTimes'[ItemId]),
+			    [Total Processing Time],
+			    0.95
+			)
+		formatString: #,0.0
+		displayFolder: Per-Item Statistics
+		lineageTag: 28fe6b99-a9d2-4925-a441-a4ccac78ee41
+
+	measure 'P99 Item Total Time' =
+			PERCENTILEX.INC(
+			    VALUES('WorkflowProcessingTimes'[ItemId]),
+			    [Total Processing Time],
+			    0.99
+			)
+		formatString: #,0.0
+		displayFolder: Per-Item Statistics
+		lineageTag: cf9c6201-99d6-4078-a8a3-1710112e631a
+
+	/// Share of items whose total time exceeds the Outlier Threshold.
+	measure 'Outlier %' = DIVIDE([Outlier Count], [Total Items])
+		formatString: 0.0%
+		displayFolder: Outlier Detection
+		lineageTag: ae5cb7e4-e965-486b-8576-2e85cc0bcb8d
+
+	/// 1 = normal, 2 = over threshold, 3 = over 8 hours. Use with conditional formatting rules on tables and the capped-axis chart.
+	measure 'Outlier Formatting' =
+			VAR TotalTime = [Total Processing Time]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        TotalTime > 480, 3,                  // Red: over 8 hours
+			        TotalTime > [Outlier Threshold], 2,  // Amber: over the threshold
+			        1                                    // Green: normal
+			    )
+		formatString: 0
+		displayFolder: Formatting
+		lineageTag: 4cf94cde-b14d-4541-aca3-9340db2016d2
+
+	partition 'DAX Measures' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
