@@ -1,0 +1,601 @@
+ItemId,WorkflowState,ProcessingTimeMinutes,ProcessedDate,Category,Priority
+WI-001,Received,12,2024-01-15,Invoice,Normal
+WI-001,Validation,8,2024-01-15,Invoice,Normal
+WI-001,Processing,25,2024-01-15,Invoice,Normal
+WI-001,Review,15,2024-01-15,Invoice,Normal
+WI-001,Complete,5,2024-01-15,Invoice,Normal
+WI-002,Received,18,2024-01-15,Purchase Order,Normal
+WI-002,Validation,12,2024-01-15,Purchase Order,Normal
+WI-002,Processing,35,2024-01-15,Purchase Order,Normal
+WI-002,Review,22,2024-01-15,Purchase Order,Normal
+WI-002,Complete,8,2024-01-15,Purchase Order,Normal
+WI-003,Received,15,2024-01-16,Invoice,High
+WI-003,Validation,10,2024-01-16,Invoice,High
+WI-003,Processing,28,2024-01-16,Invoice,High
+WI-003,Review,18,2024-01-16,Invoice,High
+WI-003,Complete,6,2024-01-16,Invoice,High
+WI-004,Received,22,2024-01-16,Contract,Normal
+WI-004,Validation,18,2024-01-16,Contract,Normal
+WI-004,Processing,32,2024-01-16,Contract,Normal
+WI-004,Review,18,2024-01-16,Contract,Normal
+WI-004,Complete,8,2024-01-16,Contract,Normal
+WI-005,Received,8,2024-01-17,Invoice,Normal
+WI-005,Validation,6,2024-01-17,Invoice,Normal
+WI-005,Processing,18,2024-01-17,Invoice,Normal
+WI-005,Review,12,2024-01-17,Invoice,Normal
+WI-005,Complete,4,2024-01-17,Invoice,Normal
+WI-006,Received,14,2024-01-17,Purchase Order,High
+WI-006,Validation,9,2024-01-17,Purchase Order,High
+WI-006,Processing,32,2024-01-17,Purchase Order,High
+WI-006,Review,20,2024-01-17,Purchase Order,High
+WI-006,Complete,7,2024-01-17,Purchase Order,High
+WI-007,Received,45,2024-01-18,Contract,Normal
+WI-007,Validation,7200,2024-01-23,Contract,Normal
+WI-007,Processing,120,2024-01-24,Contract,Normal
+WI-007,Review,85,2024-01-24,Contract,Normal
+WI-007,Complete,15,2024-01-24,Contract,Normal
+WI-008,Received,11,2024-01-18,Invoice,Normal
+WI-008,Validation,7,2024-01-18,Invoice,Normal
+WI-008,Processing,22,2024-01-18,Invoice,Normal
+WI-008,Review,14,2024-01-18,Invoice,Normal
+WI-008,Complete,5,2024-01-18,Invoice,Normal
+WI-009,Received,16,2024-01-19,Purchase Order,Normal
+WI-009,Validation,11,2024-01-19,Purchase Order,Normal
+WI-009,Processing,30,2024-01-19,Purchase Order,Normal
+WI-009,Review,19,2024-01-19,Purchase Order,Normal
+WI-009,Complete,6,2024-01-19,Purchase Order,Normal
+WI-010,Received,19,2024-01-19,Invoice,High
+WI-010,Validation,13,2024-01-19,Invoice,High
+WI-010,Processing,14400,2024-01-29,Invoice,High
+WI-010,Review,25,2024-01-29,Invoice,High
+WI-010,Complete,8,2024-01-29,Invoice,High
+WI-011,Received,13,2024-01-20,Contract,Normal
+WI-011,Validation,8,2024-01-20,Contract,Normal
+WI-011,Processing,42,2024-01-20,Contract,Normal
+WI-011,Review,28,2024-01-20,Contract,Normal
+WI-011,Complete,10,2024-01-20,Contract,Normal
+WI-012,Received,21,2024-01-20,Invoice,Normal
+WI-012,Validation,14,2024-01-20,Invoice,Normal
+WI-012,Processing,33,2024-01-20,Invoice,Normal
+WI-012,Review,21,2024-01-20,Invoice,Normal
+WI-012,Complete,7,2024-01-20,Invoice,Normal
+WI-013,Received,10,2024-01-21,Purchase Order,Normal
+WI-013,Validation,6,2024-01-21,Purchase Order,Normal
+WI-013,Processing,24,2024-01-21,Purchase Order,Normal
+WI-013,Review,15,2024-01-21,Purchase Order,Normal
+WI-013,Complete,5,2024-01-21,Purchase Order,Normal
+WI-014,Received,17,2024-01-21,Invoice,High
+WI-014,Validation,11,2024-01-21,Invoice,High
+WI-014,Processing,29,2024-01-21,Invoice,High
+WI-014,Review,18,2024-01-21,Invoice,High
+WI-014,Complete,6,2024-01-21,Invoice,High
+WI-015,Received,25,2024-01-22,Contract,Normal
+WI-015,Validation,10080,2024-01-29,Contract,Normal
+WI-015,Processing,65,2024-01-29,Contract,Normal
+WI-015,Review,45,2024-01-29,Contract,Normal
+WI-015,Complete,14,2024-01-29,Contract,Normal
+WI-016,Received,14,2024-01-22,Invoice,Normal
+WI-016,Validation,9,2024-01-22,Invoice,Normal
+WI-016,Processing,26,2024-01-22,Invoice,Normal
+WI-016,Review,16,2024-01-22,Invoice,Normal
+WI-016,Complete,5,2024-01-22,Invoice,Normal
+WI-017,Received,20,2024-01-23,Purchase Order,Normal
+WI-017,Validation,13,2024-01-23,Purchase Order,Normal
+WI-017,Processing,36,2024-01-23,Purchase Order,Normal
+WI-017,Review,23,2024-01-23,Purchase Order,Normal
+WI-017,Complete,8,2024-01-23,Purchase Order,Normal
+WI-018,Received,12,2024-01-23,Invoice,Normal
+WI-018,Validation,8,2024-01-23,Invoice,Normal
+WI-018,Processing,21,2024-01-23,Invoice,Normal
+WI-018,Review,13,2024-01-23,Invoice,Normal
+WI-018,Complete,4,2024-01-23,Invoice,Normal
+WI-019,Received,18,2024-01-24,Contract,High
+WI-019,Validation,12,2024-01-24,Contract,High
+WI-019,Processing,30,2024-01-24,Contract,High
+WI-019,Review,22,2024-01-24,Contract,High
+WI-019,Complete,11,2024-01-24,Contract,High
+WI-020,Received,15,2024-01-24,Invoice,Normal
+WI-020,Validation,10,2024-01-24,Invoice,Normal
+WI-020,Processing,27,2024-01-24,Invoice,Normal
+WI-020,Review,17,2024-01-24,Invoice,Normal
+WI-020,Complete,6,2024-01-24,Invoice,Normal
+WI-021,Received,23,2024-01-25,Purchase Order,Normal
+WI-021,Validation,15,2024-01-25,Purchase Order,Normal
+WI-021,Processing,8640,2024-02-01,Purchase Order,Normal
+WI-021,Review,28,2024-02-01,Purchase Order,Normal
+WI-021,Complete,9,2024-02-01,Purchase Order,Normal
+WI-022,Received,11,2024-01-25,Invoice,Normal
+WI-022,Validation,7,2024-01-25,Invoice,Normal
+WI-022,Processing,19,2024-01-25,Invoice,Normal
+WI-022,Review,12,2024-01-25,Invoice,Normal
+WI-022,Complete,4,2024-01-25,Invoice,Normal
+WI-023,Received,16,2024-01-26,Contract,Normal
+WI-023,Validation,10,2024-01-26,Contract,Normal
+WI-023,Processing,38,2024-01-26,Contract,Normal
+WI-023,Review,25,2024-01-26,Contract,Normal
+WI-023,Complete,9,2024-01-26,Contract,Normal
+WI-024,Received,19,2024-01-26,Invoice,High
+WI-024,Validation,12,2024-01-26,Invoice,High
+WI-024,Processing,31,2024-01-26,Invoice,High
+WI-024,Review,20,2024-01-26,Invoice,High
+WI-024,Complete,7,2024-01-26,Invoice,High
+WI-025,Received,14,2024-01-27,Purchase Order,Normal
+WI-025,Validation,9,2024-01-27,Purchase Order,Normal
+WI-025,Processing,28,2024-01-27,Purchase Order,Normal
+WI-025,Review,18,2024-01-27,Purchase Order,Normal
+WI-025,Complete,6,2024-01-27,Purchase Order,Normal
+WI-026,Received,22,2024-01-27,Invoice,Normal
+WI-026,Validation,14,2024-01-27,Invoice,Normal
+WI-026,Processing,34,2024-01-27,Invoice,Normal
+WI-026,Review,22,2024-01-27,Invoice,Normal
+WI-026,Complete,8,2024-01-27,Invoice,Normal
+WI-027,Received,10,2024-01-28,Contract,Normal
+WI-027,Validation,6,2024-01-28,Contract,Normal
+WI-027,Processing,40,2024-01-28,Contract,Normal
+WI-027,Review,27,2024-01-28,Contract,Normal
+WI-027,Complete,9,2024-01-28,Contract,Normal
+WI-028,Received,17,2024-01-28,Invoice,Normal
+WI-028,Validation,11,2024-01-28,Invoice,Normal
+WI-028,Processing,25,2024-01-28,Invoice,Normal
+WI-028,Review,16,2024-01-28,Invoice,Normal
+WI-028,Complete,5,2024-01-28,Invoice,Normal
+WI-029,Received,35,2024-01-29,Purchase Order,High
+WI-029,Validation,12960,2024-02-07,Purchase Order,High
+WI-029,Processing,55,2024-02-07,Purchase Order,High
+WI-029,Review,35,2024-02-07,Purchase Order,High
+WI-029,Complete,12,2024-02-07,Purchase Order,High
+WI-030,Received,13,2024-01-29,Invoice,Normal
+WI-030,Validation,8,2024-01-29,Invoice,Normal
+WI-030,Processing,23,2024-01-29,Invoice,Normal
+WI-030,Review,15,2024-01-29,Invoice,Normal
+WI-030,Complete,5,2024-01-29,Invoice,Normal
+WI-031,Received,19,2024-01-15,Purchase Order,Normal
+WI-031,Validation,15,2024-01-15,Purchase Order,Normal
+WI-031,Processing,14,2024-01-15,Purchase Order,Normal
+WI-031,Review,11,2024-01-15,Purchase Order,Normal
+WI-031,Complete,7,2024-01-15,Purchase Order,Normal
+WI-032,Received,17,2024-01-15,Contract,High
+WI-032,Validation,6,2024-01-15,Contract,High
+WI-032,Processing,14,2024-01-15,Contract,High
+WI-032,Review,22,2024-01-15,Contract,High
+WI-032,Complete,12,2024-01-15,Contract,High
+WI-033,Received,21,2024-01-15,Contract,Normal
+WI-033,Validation,5,2024-01-15,Contract,Normal
+WI-033,Processing,34,2024-01-15,Contract,Normal
+WI-033,Review,9,2024-01-15,Contract,Normal
+WI-033,Complete,5,2024-01-15,Contract,Normal
+WI-034,Received,23,2024-01-16,Purchase Order,Normal
+WI-034,Validation,9,2024-01-16,Purchase Order,Normal
+WI-034,Processing,29,2024-01-16,Purchase Order,Normal
+WI-034,Review,18,2024-01-16,Purchase Order,Normal
+WI-034,Complete,3,2024-01-16,Purchase Order,Normal
+WI-035,Received,14,2024-01-16,Purchase Order,Normal
+WI-035,Validation,5,2024-01-16,Purchase Order,Normal
+WI-035,Processing,17,2024-01-16,Purchase Order,Normal
+WI-035,Review,13,2024-01-16,Purchase Order,Normal
+WI-035,Complete,7,2024-01-16,Purchase Order,Normal
+WI-036,Received,24,2024-01-16,Invoice,Normal
+WI-036,Validation,5,2024-01-16,Invoice,Normal
+WI-036,Processing,33,2024-01-16,Invoice,Normal
+WI-036,Review,19,2024-01-16,Invoice,Normal
+WI-036,Complete,3,2024-01-16,Invoice,Normal
+WI-037,Received,24,2024-01-17,Contract,Normal
+WI-037,Validation,20,2024-01-17,Contract,Normal
+WI-037,Processing,18,2024-01-17,Contract,Normal
+WI-037,Review,8,2024-01-17,Contract,Normal
+WI-037,Complete,8,2024-01-17,Contract,Normal
+WI-038,Received,8,2024-01-17,Invoice,High
+WI-038,Validation,6,2024-01-17,Invoice,High
+WI-038,Processing,35,2024-01-17,Invoice,High
+WI-038,Review,15,2024-01-17,Invoice,High
+WI-038,Complete,4,2024-01-17,Invoice,High
+WI-039,Received,15,2024-01-18,Invoice,Normal
+WI-039,Validation,8,2024-01-18,Invoice,Normal
+WI-039,Processing,21,2024-01-18,Invoice,Normal
+WI-039,Review,22,2024-01-18,Invoice,Normal
+WI-039,Complete,3,2024-01-18,Invoice,Normal
+WI-040,Received,20,2024-01-18,Purchase Order,Normal
+WI-040,Validation,6,2024-01-18,Purchase Order,Normal
+WI-040,Processing,22,2024-01-18,Purchase Order,Normal
+WI-040,Review,8,2024-01-18,Purchase Order,Normal
+WI-040,Complete,11,2024-01-18,Purchase Order,Normal
+WI-041,Received,12,2024-01-18,Purchase Order,Normal
+WI-041,Validation,18,2024-01-18,Purchase Order,Normal
+WI-041,Processing,34,2024-01-18,Purchase Order,Normal
+WI-041,Review,9,2024-01-18,Purchase Order,Normal
+WI-041,Complete,10,2024-01-18,Purchase Order,Normal
+WI-042,Received,17,2024-01-19,Invoice,Normal
+WI-042,Validation,20,2024-01-19,Invoice,Normal
+WI-042,Processing,18,2024-01-19,Invoice,Normal
+WI-042,Review,16,2024-01-19,Invoice,Normal
+WI-042,Complete,8,2024-01-19,Invoice,Normal
+WI-043,Received,22,2024-01-19,Invoice,Normal
+WI-043,Validation,12,2024-01-19,Invoice,Normal
+WI-043,Processing,32,2024-01-19,Invoice,Normal
+WI-043,Review,14,2024-01-19,Invoice,Normal
+WI-043,Complete,10,2024-01-19,Invoice,Normal
+WI-044,Received,8,2024-01-22,Invoice,Normal
+WI-044,Validation,13,2024-01-22,Invoice,Normal
+WI-044,Processing,14,2024-01-22,Invoice,Normal
+WI-044,Review,10,2024-01-22,Invoice,Normal
+WI-044,Complete,3,2024-01-22,Invoice,Normal
+WI-045,Received,6,2024-01-22,Purchase Order,Normal
+WI-045,Validation,12,2024-01-22,Purchase Order,Normal
+WI-045,Processing,21,2024-01-22,Purchase Order,Normal
+WI-045,Review,10,2024-01-22,Purchase Order,Normal
+WI-045,Complete,5,2024-01-22,Purchase Order,Normal
+WI-046,Received,10,2024-01-22,Contract,Normal
+WI-046,Validation,7,2024-01-22,Contract,Normal
+WI-046,Processing,35,2024-01-22,Contract,Normal
+WI-046,Review,8,2024-01-22,Contract,Normal
+WI-046,Complete,9,2024-01-22,Contract,Normal
+WI-047,Received,9,2024-01-23,Invoice,Normal
+WI-047,Validation,14,2024-01-23,Invoice,Normal
+WI-047,Processing,21,2024-01-23,Invoice,Normal
+WI-047,Review,9,2024-01-23,Invoice,Normal
+WI-047,Complete,3,2024-01-23,Invoice,Normal
+WI-048,Received,7,2024-01-23,Purchase Order,Normal
+WI-048,Validation,18,2024-01-23,Purchase Order,Normal
+WI-048,Processing,48,2024-01-23,Purchase Order,Normal
+WI-048,Review,18,2024-01-23,Purchase Order,Normal
+WI-048,Complete,9,2024-01-23,Purchase Order,Normal
+WI-049,Received,6,2024-01-24,Purchase Order,Normal
+WI-049,Validation,13,2024-01-24,Purchase Order,Normal
+WI-049,Processing,50,2024-01-24,Purchase Order,Normal
+WI-049,Review,25,2024-01-24,Purchase Order,Normal
+WI-049,Complete,4,2024-01-24,Purchase Order,Normal
+WI-050,Received,9,2024-01-24,Contract,High
+WI-050,Validation,18,2024-01-24,Contract,High
+WI-050,Processing,13,2024-01-24,Contract,High
+WI-050,Review,12,2024-01-24,Contract,High
+WI-050,Complete,3,2024-01-24,Contract,High
+WI-051,Received,7,2024-01-24,Invoice,High
+WI-051,Validation,13,2024-01-24,Invoice,High
+WI-051,Processing,12,2024-01-24,Invoice,High
+WI-051,Review,16,2024-01-24,Invoice,High
+WI-051,Complete,10,2024-01-24,Invoice,High
+WI-052,Received,17,2024-01-25,Purchase Order,Normal
+WI-052,Validation,10,2024-01-25,Purchase Order,Normal
+WI-052,Processing,12,2024-01-25,Purchase Order,Normal
+WI-052,Review,8,2024-01-25,Purchase Order,Normal
+WI-052,Complete,6,2024-01-25,Purchase Order,Normal
+WI-053,Received,23,2024-01-25,Invoice,High
+WI-053,Validation,8,2024-01-25,Invoice,High
+WI-053,Processing,13,2024-01-25,Invoice,High
+WI-053,Review,8,2024-01-25,Invoice,High
+WI-053,Complete,8,2024-01-25,Invoice,High
+WI-054,Received,13,2024-01-25,Invoice,Normal
+WI-054,Validation,16,2024-01-25,Invoice,Normal
+WI-054,Processing,27,2024-01-25,Invoice,Normal
+WI-054,Review,15,2024-01-25,Invoice,Normal
+WI-054,Complete,3,2024-01-25,Invoice,Normal
+WI-055,Received,8,2024-01-26,Contract,Normal
+WI-055,Validation,8,2024-01-26,Contract,Normal
+WI-055,Processing,12,2024-01-26,Contract,Normal
+WI-055,Review,9,2024-01-26,Contract,Normal
+WI-055,Complete,10,2024-01-26,Contract,Normal
+WI-056,Received,9,2024-01-26,Purchase Order,Normal
+WI-056,Validation,17,2024-01-26,Purchase Order,Normal
+WI-056,Processing,12,2024-01-26,Purchase Order,Normal
+WI-056,Review,21,2024-01-26,Purchase Order,Normal
+WI-056,Complete,3,2024-01-26,Purchase Order,Normal
+WI-057,Received,9,2024-01-29,Invoice,Normal
+WI-057,Validation,12,2024-01-29,Invoice,Normal
+WI-057,Processing,52,2024-01-29,Invoice,Normal
+WI-057,Review,28,2024-01-29,Invoice,Normal
+WI-057,Complete,4,2024-01-29,Invoice,Normal
+WI-058,Received,14,2024-01-29,Invoice,Normal
+WI-058,Validation,18,2024-01-29,Invoice,Normal
+WI-058,Processing,28,2024-01-29,Invoice,Normal
+WI-058,Review,22,2024-01-29,Invoice,Normal
+WI-058,Complete,10,2024-01-29,Invoice,Normal
+WI-059,Received,18,2024-01-29,Invoice,Normal
+WI-059,Validation,5,2024-01-29,Invoice,Normal
+WI-059,Processing,14,2024-01-29,Invoice,Normal
+WI-059,Review,8,2024-01-29,Invoice,Normal
+WI-059,Complete,11,2024-01-29,Invoice,Normal
+WI-060,Received,22,2024-01-30,Purchase Order,Normal
+WI-060,Validation,12,2024-01-30,Purchase Order,Normal
+WI-060,Processing,12,2024-01-30,Purchase Order,Normal
+WI-060,Review,14,2024-01-30,Purchase Order,Normal
+WI-060,Complete,3,2024-01-30,Purchase Order,Normal
+WI-061,Received,7,2024-01-30,Invoice,Normal
+WI-061,Validation,5,2024-01-30,Invoice,Normal
+WI-061,Processing,21,2024-01-30,Invoice,Normal
+WI-061,Review,21,2024-01-30,Invoice,Normal
+WI-061,Complete,8,2024-01-30,Invoice,Normal
+WI-062,Received,17,2024-01-31,Purchase Order,Normal
+WI-062,Validation,15,2024-01-31,Purchase Order,Normal
+WI-062,Processing,36,2024-01-31,Purchase Order,Normal
+WI-062,Review,22,2024-01-31,Purchase Order,Normal
+WI-062,Complete,4,2024-01-31,Purchase Order,Normal
+WI-063,Received,9,2024-01-31,Contract,Normal
+WI-063,Validation,7,2024-01-31,Contract,Normal
+WI-063,Processing,20,2024-01-31,Contract,Normal
+WI-063,Review,16,2024-01-31,Contract,Normal
+WI-063,Complete,3,2024-01-31,Contract,Normal
+WI-064,Received,15,2024-01-31,Purchase Order,Normal
+WI-064,Validation,19,2024-01-31,Purchase Order,Normal
+WI-064,Processing,13,2024-01-31,Purchase Order,Normal
+WI-064,Review,19,2024-01-31,Purchase Order,Normal
+WI-064,Complete,9,2024-01-31,Purchase Order,Normal
+WI-065,Received,21,2024-02-01,Purchase Order,Normal
+WI-065,Validation,17,2024-02-01,Purchase Order,Normal
+WI-065,Processing,35,2024-02-01,Purchase Order,Normal
+WI-065,Review,11,2024-02-01,Purchase Order,Normal
+WI-065,Complete,8,2024-02-01,Purchase Order,Normal
+WI-066,Received,13,2024-02-01,Purchase Order,Normal
+WI-066,Validation,6,2024-02-01,Purchase Order,Normal
+WI-066,Processing,16,2024-02-01,Purchase Order,Normal
+WI-066,Review,13,2024-02-01,Purchase Order,Normal
+WI-066,Complete,3,2024-02-01,Purchase Order,Normal
+WI-067,Received,9,2024-02-02,Invoice,Normal
+WI-067,Validation,9,2024-02-02,Invoice,Normal
+WI-067,Processing,38,2024-02-02,Invoice,Normal
+WI-067,Review,29,2024-02-02,Invoice,Normal
+WI-067,Complete,3,2024-02-02,Invoice,Normal
+WI-068,Received,13,2024-02-02,Invoice,Normal
+WI-068,Validation,8,2024-02-02,Invoice,Normal
+WI-068,Processing,46,2024-02-02,Invoice,Normal
+WI-068,Review,23,2024-02-02,Invoice,Normal
+WI-068,Complete,3,2024-02-02,Invoice,Normal
+WI-069,Received,13,2024-02-02,Invoice,Normal
+WI-069,Validation,19,2024-02-02,Invoice,Normal
+WI-069,Processing,14,2024-02-02,Invoice,Normal
+WI-069,Review,22,2024-02-02,Invoice,Normal
+WI-069,Complete,12,2024-02-02,Invoice,Normal
+WI-070,Received,10,2024-02-05,Purchase Order,High
+WI-070,Validation,16,2024-02-05,Purchase Order,High
+WI-070,Processing,44,2024-02-05,Purchase Order,High
+WI-070,Review,27,2024-02-05,Purchase Order,High
+WI-070,Complete,3,2024-02-05,Purchase Order,High
+WI-071,Received,16,2024-02-05,Invoice,Normal
+WI-071,Validation,6,2024-02-05,Invoice,Normal
+WI-071,Processing,16,2024-02-05,Invoice,Normal
+WI-071,Review,18,2024-02-05,Invoice,Normal
+WI-071,Complete,12,2024-02-05,Invoice,Normal
+WI-072,Received,11,2024-02-05,Purchase Order,Normal
+WI-072,Validation,5,2024-02-05,Purchase Order,Normal
+WI-072,Processing,25,2024-02-05,Purchase Order,Normal
+WI-072,Review,8,2024-02-05,Purchase Order,Normal
+WI-072,Complete,9,2024-02-05,Purchase Order,Normal
+WI-073,Received,10,2024-02-06,Invoice,Normal
+WI-073,Validation,6,2024-02-06,Invoice,Normal
+WI-073,Processing,22,2024-02-06,Invoice,Normal
+WI-073,Review,24,2024-02-06,Invoice,Normal
+WI-073,Complete,3,2024-02-06,Invoice,Normal
+WI-074,Received,22,2024-02-06,Contract,Normal
+WI-074,Validation,19,2024-02-06,Contract,Normal
+WI-074,Processing,33,2024-02-06,Contract,Normal
+WI-074,Review,13,2024-02-06,Contract,Normal
+WI-074,Complete,3,2024-02-06,Contract,Normal
+WI-075,Received,17,2024-02-07,Invoice,Normal
+WI-075,Validation,7,2024-02-07,Invoice,Normal
+WI-075,Processing,21,2024-02-07,Invoice,Normal
+WI-075,Review,9,2024-02-07,Invoice,Normal
+WI-075,Complete,10,2024-02-07,Invoice,Normal
+WI-076,Received,8,2024-02-07,Invoice,Normal
+WI-076,Validation,5,2024-02-07,Invoice,Normal
+WI-076,Processing,33,2024-02-07,Invoice,Normal
+WI-076,Review,18,2024-02-07,Invoice,Normal
+WI-076,Complete,3,2024-02-07,Invoice,Normal
+WI-077,Received,7,2024-02-07,Invoice,High
+WI-077,Validation,13,2024-02-07,Invoice,High
+WI-077,Processing,17,2024-02-07,Invoice,High
+WI-077,Review,18,2024-02-07,Invoice,High
+WI-077,Complete,5,2024-02-07,Invoice,High
+WI-078,Received,17,2024-02-08,Purchase Order,Normal
+WI-078,Validation,5,2024-02-08,Purchase Order,Normal
+WI-078,Processing,13,2024-02-08,Purchase Order,Normal
+WI-078,Review,11,2024-02-08,Purchase Order,Normal
+WI-078,Complete,4,2024-02-08,Purchase Order,Normal
+WI-079,Received,6,2024-02-08,Purchase Order,Normal
+WI-079,Validation,15,2024-02-08,Purchase Order,Normal
+WI-079,Processing,16,2024-02-08,Purchase Order,Normal
+WI-079,Review,20,2024-02-08,Purchase Order,Normal
+WI-079,Complete,3,2024-02-08,Purchase Order,Normal
+WI-080,Received,10,2024-02-09,Contract,High
+WI-080,Validation,5,2024-02-09,Contract,High
+WI-080,Processing,24,2024-02-09,Contract,High
+WI-080,Review,18,2024-02-09,Contract,High
+WI-080,Complete,3,2024-02-09,Contract,High
+WI-081,Received,16,2024-02-09,Purchase Order,Normal
+WI-081,Validation,7,2024-02-09,Purchase Order,Normal
+WI-081,Processing,37,2024-02-09,Purchase Order,Normal
+WI-081,Review,25,2024-02-09,Purchase Order,Normal
+WI-081,Complete,5,2024-02-09,Purchase Order,Normal
+WI-082,Received,9,2024-02-09,Purchase Order,Normal
+WI-082,Validation,17,2024-02-09,Purchase Order,Normal
+WI-082,Processing,33,2024-02-09,Purchase Order,Normal
+WI-082,Review,23,2024-02-09,Purchase Order,Normal
+WI-082,Complete,4,2024-02-09,Purchase Order,Normal
+WI-083,Received,6,2024-02-12,Purchase Order,Normal
+WI-083,Validation,11,2024-02-12,Purchase Order,Normal
+WI-083,Processing,31,2024-02-12,Purchase Order,Normal
+WI-083,Review,8,2024-02-12,Purchase Order,Normal
+WI-083,Complete,12,2024-02-12,Purchase Order,Normal
+WI-084,Received,7,2024-02-12,Purchase Order,High
+WI-084,Validation,20,2024-02-12,Purchase Order,High
+WI-084,Processing,35,2024-02-12,Purchase Order,High
+WI-084,Review,10,2024-02-12,Purchase Order,High
+WI-084,Complete,5,2024-02-12,Purchase Order,High
+WI-085,Received,24,2024-02-13,Contract,High
+WI-085,Validation,15,2024-02-13,Contract,High
+WI-085,Processing,34,2024-02-13,Contract,High
+WI-085,Review,13,2024-02-13,Contract,High
+WI-085,Complete,11,2024-02-13,Contract,High
+WI-086,Received,22,2024-02-13,Invoice,Normal
+WI-086,Validation,5,2024-02-13,Invoice,Normal
+WI-086,Processing,19,2024-02-13,Invoice,Normal
+WI-086,Review,8,2024-02-13,Invoice,Normal
+WI-086,Complete,7,2024-02-13,Invoice,Normal
+WI-087,Received,24,2024-02-13,Invoice,Normal
+WI-087,Validation,16,2024-02-13,Invoice,Normal
+WI-087,Processing,40,2024-02-13,Invoice,Normal
+WI-087,Review,27,2024-02-13,Invoice,Normal
+WI-087,Complete,3,2024-02-13,Invoice,Normal
+WI-088,Received,7,2024-02-14,Invoice,High
+WI-088,Validation,12,2024-02-14,Invoice,High
+WI-088,Processing,29,2024-02-14,Invoice,High
+WI-088,Review,8,2024-02-14,Invoice,High
+WI-088,Complete,12,2024-02-14,Invoice,High
+WI-089,Received,12,2024-02-14,Purchase Order,Normal
+WI-089,Validation,10,2024-02-14,Purchase Order,Normal
+WI-089,Processing,17,2024-02-14,Purchase Order,Normal
+WI-089,Review,20,2024-02-14,Purchase Order,Normal
+WI-089,Complete,3,2024-02-14,Purchase Order,Normal
+WI-090,Received,6,2024-02-14,Purchase Order,Normal
+WI-090,Validation,10,2024-02-14,Purchase Order,Normal
+WI-090,Processing,21,2024-02-14,Purchase Order,Normal
+WI-090,Review,19,2024-02-14,Purchase Order,Normal
+WI-090,Complete,9,2024-02-14,Purchase Order,Normal
+WI-091,Received,13,2024-02-15,Invoice,Normal
+WI-091,Validation,17,2024-02-15,Invoice,Normal
+WI-091,Processing,27,2024-02-15,Invoice,Normal
+WI-091,Review,20,2024-02-15,Invoice,Normal
+WI-091,Complete,4,2024-02-15,Invoice,Normal
+WI-092,Received,15,2024-02-15,Invoice,High
+WI-092,Validation,19,2024-02-15,Invoice,High
+WI-092,Processing,12,2024-02-15,Invoice,High
+WI-092,Review,20,2024-02-15,Invoice,High
+WI-092,Complete,3,2024-02-15,Invoice,High
+WI-093,Received,12,2024-02-16,Invoice,Normal
+WI-093,Validation,14,2024-02-16,Invoice,Normal
+WI-093,Processing,15,2024-02-16,Invoice,Normal
+WI-093,Review,24,2024-02-16,Invoice,Normal
+WI-093,Complete,12,2024-02-16,Invoice,Normal
+WI-094,Received,7,2024-02-16,Invoice,Normal
+WI-094,Validation,12,2024-02-16,Invoice,Normal
+WI-094,Processing,28,2024-02-16,Invoice,Normal
+WI-094,Review,20,2024-02-16,Invoice,Normal
+WI-094,Complete,8,2024-02-16,Invoice,Normal
+WI-095,Received,15,2024-02-16,Purchase Order,Normal
+WI-095,Validation,5,2024-02-16,Purchase Order,Normal
+WI-095,Processing,35,2024-02-16,Purchase Order,Normal
+WI-095,Review,8,2024-02-16,Purchase Order,Normal
+WI-095,Complete,11,2024-02-16,Purchase Order,Normal
+WI-096,Received,6,2024-02-19,Contract,Normal
+WI-096,Validation,19,2024-02-19,Contract,Normal
+WI-096,Processing,15,2024-02-19,Contract,Normal
+WI-096,Review,9,2024-02-19,Contract,Normal
+WI-096,Complete,5,2024-02-19,Contract,Normal
+WI-097,Received,14,2024-02-19,Purchase Order,Normal
+WI-097,Validation,10,2024-02-19,Purchase Order,Normal
+WI-097,Processing,28,2024-02-19,Purchase Order,Normal
+WI-097,Review,10,2024-02-19,Purchase Order,Normal
+WI-097,Complete,3,2024-02-19,Purchase Order,Normal
+WI-098,Received,12,2024-02-20,Invoice,Normal
+WI-098,Validation,5,2024-02-20,Invoice,Normal
+WI-098,Processing,22,2024-02-20,Invoice,Normal
+WI-098,Review,10,2024-02-20,Invoice,Normal
+WI-098,Complete,3,2024-02-20,Invoice,Normal
+WI-099,Received,7,2024-02-20,Contract,Normal
+WI-099,Validation,17,2024-02-20,Contract,Normal
+WI-099,Processing,52,2024-02-20,Contract,Normal
+WI-099,Review,30,2024-02-20,Contract,Normal
+WI-099,Complete,5,2024-02-20,Contract,Normal
+WI-100,Received,7,2024-02-20,Invoice,Normal
+WI-100,Validation,10,2024-02-20,Invoice,Normal
+WI-100,Processing,50,2024-02-20,Invoice,Normal
+WI-100,Review,21,2024-02-20,Invoice,Normal
+WI-100,Complete,7,2024-02-20,Invoice,Normal
+WI-101,Received,9,2024-02-21,Contract,High
+WI-101,Validation,12,2024-02-21,Contract,High
+WI-101,Processing,17,2024-02-21,Contract,High
+WI-101,Review,9,2024-02-21,Contract,High
+WI-101,Complete,12,2024-02-21,Contract,High
+WI-102,Received,14,2024-02-21,Invoice,Normal
+WI-102,Validation,5,2024-02-21,Invoice,Normal
+WI-102,Processing,35,2024-02-21,Invoice,Normal
+WI-102,Review,8,2024-02-21,Invoice,Normal
+WI-102,Complete,3,2024-02-21,Invoice,Normal
+WI-103,Received,21,2024-02-22,Purchase Order,High
+WI-103,Validation,6,2024-02-22,Purchase Order,High
+WI-103,Processing,50,2024-02-22,Purchase Order,High
+WI-103,Review,27,2024-02-22,Purchase Order,High
+WI-103,Complete,5,2024-02-22,Purchase Order,High
+WI-104,Received,9,2024-02-22,Invoice,High
+WI-104,Validation,7,2024-02-22,Invoice,High
+WI-104,Processing,12,2024-02-22,Invoice,High
+WI-104,Review,19,2024-02-22,Invoice,High
+WI-104,Complete,8,2024-02-22,Invoice,High
+WI-105,Received,7,2024-02-22,Purchase Order,Normal
+WI-105,Validation,5,2024-02-22,Purchase Order,Normal
+WI-105,Processing,18,2024-02-22,Purchase Order,Normal
+WI-105,Review,20,2024-02-22,Purchase Order,Normal
+WI-105,Complete,4,2024-02-22,Purchase Order,Normal
+WI-106,Received,7,2024-02-23,Invoice,Normal
+WI-106,Validation,11,2024-02-23,Invoice,Normal
+WI-106,Processing,29,2024-02-23,Invoice,Normal
+WI-106,Review,8,2024-02-23,Invoice,Normal
+WI-106,Complete,4,2024-02-23,Invoice,Normal
+WI-107,Received,12,2024-02-23,Invoice,Normal
+WI-107,Validation,8,2024-02-23,Invoice,Normal
+WI-107,Processing,21,2024-02-23,Invoice,Normal
+WI-107,Review,8,2024-02-23,Invoice,Normal
+WI-107,Complete,3,2024-02-23,Invoice,Normal
+WI-108,Received,6,2024-02-23,Contract,Normal
+WI-108,Validation,14,2024-02-23,Contract,Normal
+WI-108,Processing,12,2024-02-23,Contract,Normal
+WI-108,Review,18,2024-02-23,Contract,Normal
+WI-108,Complete,8,2024-02-23,Contract,Normal
+WI-109,Received,14,2024-02-26,Purchase Order,Normal
+WI-109,Validation,5,2024-02-26,Purchase Order,Normal
+WI-109,Processing,35,2024-02-26,Purchase Order,Normal
+WI-109,Review,9,2024-02-26,Purchase Order,Normal
+WI-109,Complete,5,2024-02-26,Purchase Order,Normal
+WI-110,Received,6,2024-02-26,Invoice,Normal
+WI-110,Validation,11,2024-02-26,Invoice,Normal
+WI-110,Processing,30,2024-02-26,Invoice,Normal
+WI-110,Review,8,2024-02-26,Invoice,Normal
+WI-110,Complete,12,2024-02-26,Invoice,Normal
+WI-111,Received,10,2024-02-27,Invoice,Normal
+WI-111,Validation,8,2024-02-27,Invoice,Normal
+WI-111,Processing,24,2024-02-27,Invoice,Normal
+WI-111,Review,22,2024-02-27,Invoice,Normal
+WI-111,Complete,3,2024-02-27,Invoice,Normal
+WI-112,Received,23,2024-02-27,Contract,Normal
+WI-112,Validation,15,2024-02-27,Contract,Normal
+WI-112,Processing,30,2024-02-27,Contract,Normal
+WI-112,Review,22,2024-02-27,Contract,Normal
+WI-112,Complete,3,2024-02-27,Contract,Normal
+WI-113,Received,20,2024-02-27,Contract,Normal
+WI-113,Validation,5,2024-02-27,Contract,Normal
+WI-113,Processing,46,2024-02-27,Contract,Normal
+WI-113,Review,22,2024-02-27,Contract,Normal
+WI-113,Complete,3,2024-02-27,Contract,Normal
+WI-114,Received,6,2024-02-28,Invoice,Normal
+WI-114,Validation,5,2024-02-28,Invoice,Normal
+WI-114,Processing,14,2024-02-28,Invoice,Normal
+WI-114,Review,13,2024-02-28,Invoice,Normal
+WI-114,Complete,9,2024-02-28,Invoice,Normal
+WI-115,Received,8,2024-02-28,Purchase Order,Normal
+WI-115,Validation,15,2024-02-28,Purchase Order,Normal
+WI-115,Processing,51,2024-02-28,Purchase Order,Normal
+WI-115,Review,19,2024-02-28,Purchase Order,Normal
+WI-115,Complete,5,2024-02-28,Purchase Order,Normal
+WI-116,Received,8,2024-02-29,Invoice,Normal
+WI-116,Validation,5,2024-02-29,Invoice,Normal
+WI-116,Processing,31,2024-02-29,Invoice,Normal
+WI-116,Review,22,2024-02-29,Invoice,Normal
+WI-116,Complete,5,2024-02-29,Invoice,Normal
+WI-117,Received,9,2024-02-29,Invoice,Normal
+WI-117,Validation,12,2024-02-29,Invoice,Normal
+WI-117,Processing,18,2024-02-29,Invoice,Normal
+WI-117,Review,24,2024-02-29,Invoice,Normal
+WI-117,Complete,3,2024-02-29,Invoice,Normal
+WI-118,Received,6,2024-02-29,Invoice,Normal
+WI-118,Validation,5,2024-02-29,Invoice,Normal
+WI-118,Processing,32,2024-02-29,Invoice,Normal
+WI-118,Review,21,2024-02-29,Invoice,Normal
+WI-118,Complete,7,2024-02-29,Invoice,Normal
+WI-119,Received,6,2024-03-01,Invoice,Normal
+WI-119,Validation,11,2024-03-01,Invoice,Normal
+WI-119,Processing,43,2024-03-01,Invoice,Normal
+WI-119,Review,26,2024-03-01,Invoice,Normal
+WI-119,Complete,6,2024-03-01,Invoice,Normal
+WI-120,Received,13,2024-03-01,Purchase Order,High
+WI-120,Validation,15,2024-03-01,Purchase Order,High
+WI-120,Processing,33,2024-03-01,Purchase Order,High
+WI-120,Review,8,2024-03-01,Purchase Order,High
+WI-120,Complete,9,2024-03-01,Purchase Order,High
